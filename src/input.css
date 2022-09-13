@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-Poppins bg-primary-content;
+  }
+}
+.content {
+  @apply lg:px-[100px] px-10;
+}
+.roundsvg {
+  @apply fill-blue-900 h-20 w-20 py-5 bg-white rounded-full shadow-xl;
+}
+.borders {
+  @apply border border-black;
+}
+.tiket {
+  @apply h-[22rem] text-center rounded-xl py-6 bg-white lg:w-full w-[20em]  lg:hover:drop-shadow-lg  lg:hover:-translate-y-3 transition-transform lg:hover:scale-105  duration-[.3s] ease-in-out;
+}
+.customer {
+  @apply rounded-xl w-72 bg-page3 py-5 px-4 shadow-xl;
+}
+.slideCustomer {
+  @apply btn btn-circle bg-primary-content hover:border-white border-white hover:bg-page text-black hover:text-white;
+}
+.navscroll {
+  @apply z-[9909] fixed bg-page  text-white;
+  backdrop-filter: blur(5px);
+}

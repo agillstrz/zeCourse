@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/bb6b15c5b9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="font-Poppins text-black">
+    <section id="home">
+      <nav
+        id="navbar"
+        class="py-6 px-16 bg-white hidden fixed text-page w-full lg:flex justify-between items-center"
+      >
+        <a class="font-bold" href="">zeCourse</a>
+        <ul class="flex gap-4">
+          <li><a href="">Home</a></li>
+          <li><a href="">Community</a></li>
+          <li><a href="">Help</a></li>
+          <li><a href="">Support</a></li>
+          <li>
+            <a class="" href="">Daftar</a>
+          </li>
+          <li>
+            <a class="" href="">Login</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div
+        class="flex justify-between items-center fixed w-full lg:hidden z-40 bg-page"
+      >
+        <a class="font-bold pl-3 text-white" href="">zeCourse</a>
+
+        <label
+          class="btn btn-circle swap swap-rotate z-50 m-2 bg-page hover:bg-white text-white hover:text-page border-none"
+        >
+          <!-- this hidden checkbox controls the state -->
+          <input id="hamburger" type="checkbox" />
+
+          <!-- hamburger icon -->
+          <svg
+            class="swap-off fill-current"
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"
+            />
+          </svg>
+
+          <!-- close icon -->
+          <svg
+            class="swap-on fill-current"
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 512 512"
+          >
+            <polygon
+              points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"
+            />
+          </svg>
+        </label>
+
+        <div
+          id="navMenu"
+          class="absolute top-0 w-full hidden bg-page text-white p-2"
+        >
+          <ul>
+            <li class="p-2 hover:font-bold"><a href="">Home</a></li>
+            <li class="p-2 hover:font-bold"><a href="">Community</a></li>
+            <li class="p-2 hover:font-bold"><a href="">Help</a></li>
+            <li class="p-2 hover:font-bold"><a href="">Support</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="section1">
+      <div class="content pt-16 lg:pt-16">
+        <div class="flex lg:flex-row h-screen flex-col justify-center">
+          <div class="lg:w-1/2 md:w-full lg:py-32 py-6 flex justify-center">
+            <div class="capitalize">
+              <h1
+                class="lg:font-bold font-extrabold lg:text-[40px] text-[25px] lg:text-left"
+              >
+                Akselerasi Karier dengan Skills Digital
+              </h1>
+              <img src="./assets/img/course/.png" alt="" />
+              <p class="lg:text-md text-[15px]">
+                Dukungan kurikulum yang tepat untuk meningkatkan skill, serta
+                metode belajar yang bisa dipilih sendiri. Waktunya wujudkan
+                karier impianmu dengan mudah!
+              </p>
+
+              <div class="flex lg:justify-start justify-center">
+                <button
+                  class="bg-btn mt-8 capitalize py-3 px-5 text-white active:mt-9 rounded-xl font-semibold hover:bg-btn/90 hover:scale-110 transition-all duration-200 ease-linear"
+                >
+                  Get started for free
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="lg:w-1/2 lg:pt-10 hidden lg:block">
+            <div class="relative">
+              <img
+                class="absolute animate-bounce-1 top-60 right-20 h-40"
+                src="./assets/img/course/react.png"
+                alt=""
+              />
+              <img
+                class="absolute animate-bounce-2 top-32 left-32 h-40"
+                src="./assets/img/course/angular.png"
+                alt=""
+              />
+              <img
+                class="absolute animate-bounce-3 top-72 left-40 h-40"
+                src="./assets/img/course/Figma.png"
+                alt=""
+              />
+              <img
+                class="absolute animate-bounce-4 top-16 right-28 h-40"
+                src="./assets/img/course/Laravel.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section3">
+      <div class="content lg:h-screen py-10 lg:py-0 lg:pt-16 bg-page">
+        <h1 class="font-bold text-4xl pb-4 text-center text-white">
+          Kenapa harus di zecourse ?
+        </h1>
+        <div class="grid lg:grid-cols-3 gap-6 pt-5">
+          <div class="w-full text-white">
+            <div class="flex justify-center">
+              <img
+                class="rounded-full p-2 bg-page2"
+                height="200"
+                width="200"
+                src="./assets/img/course/money.png"
+                alt=""
+              />
+            </div>
+
+            <h2 class="pt-3 text-lg text-center font-semibold">
+              Biaya Terjangkau
+            </h2>
+            <p class="text-sm pt-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+              esse veniam quis repellendus mollitia. Architecto natus ipsam
+              quaerat perferendis nemo explicabo eius, laboriosam voluptas
+              eveniet quisquam odio ab eaque harum!
+            </p>
+          </div>
+          <div class="w-full text-white">
+            <div class="flex justify-center">
+              <img
+                class="rounded-full p-2 bg-page2"
+                height="200"
+                width="200"
+                src="./assets/img/course/laptop.png"
+                alt=""
+              />
+            </div>
+
+            <h2 class="pt-3 text-lg text-center font-semibold">
+              Dimanapun dan kapanpun
+            </h2>
+            <p class="text-sm pt-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+              esse veniam quis repellendus mollitia. Architecto natus ipsam
+              quaerat perferendis nemo explicabo eius, laboriosam voluptas
+              eveniet quisquam odio ab eaque harum!
+            </p>
+          </div>
+          <div class="w-full text-white">
+            <div class="flex justify-center">
+              <img
+                class="rounded-full p-2 bg-page2"
+                height="200"
+                width="200"
+                src="./assets/img/course/materi.png"
+                alt=""
+              />
+            </div>
+
+            <h2 class="pt-3 text-lg text-center font-semibold">
+              Materi mengikuti teknologi terbaru
+            </h2>
+            <p class="text-sm pt-2 text-justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+              esse veniam quis repellendus mollitia. Architecto natus ipsam
+              quaerat perferendis nemo explicabo eius, laboriosam voluptas
+              eveniet quisquam odio ab eaque harum!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section4">
+      <div class="content py-12 lg:h-screen bg-[#d6d6d6]">
+        <div class="lg:px-[150px] lg:flex lg:flex-col items-center text-center">
+          <h1
+            class="font-bold w-full lg:text-[30px] text-[25px] tracking-wide capitalize"
+          >
+            Ayo Pilih kursus sekarang
+          </h1>
+          <p class="lg:w-1/2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+            dicta impedit aspernatur voluptatibus
+          </p>
+          <span class="h-1.5 w-32 mt-2 bg-page"></span>
+        </div>
+        <div
+          class="grid lg:grid-cols-4 lg:gap-3 grid-cols-1 place-items-center gap-3 lg:px-28 mt-6"
+        >
+          <div class="tiket group">
+            <span class="flex cource justify-center">
+              <img
+                class="text-center"
+                height="70"
+                width="70"
+                src="./assets/img/course/react.png"
+                alt=""
+            /></span>
+            <h4 class="lg:text-lg text-3xl pt-4 font-extrabold">React JS</h4>
+            <hr class="mx-8 mt-2 p-2" />
+            <div class="text-[12px]">
+              <div class="flex flex-wrap lg:px-0 px-6">
+                <span class="w-1/5 text-white"
+                  ><i
+                    class="fa-solid fa-check p-1 rounded-full lg:group-hover:bg-green-800 transition-all duration-200 ease-in lg:group-hover:text-white lg:text-green-800 bg-green-800 lg:bg-transparent"
+                  ></i
+                ></span>
+                <p class="w-[80%] text-left pb-2 lg:text-sm text-[17px]">
+                  3 Bulan akses zecource
+                </p>
+                <span class="w-1/5 text-white"
+                  ><i
+                    class="fa-solid fa-check p-1 rounded-full lg:group-hover:bg-green-800 transition-all duration-200 ease-in lg:group-hover:text-white lg:text-green-800 bg-green-800 lg:bg-transparent"
+                  ></i
+                ></span>
+                <p class="w-[80%] text-left pb-2 lg:text-sm text-[17px]">
+                  Modul pembelajaran selamanya
+                </p>
+                <span class="w-1/5 text-white"
+                  ><i
+                    class="fa-solid fa-check p-1 rounded-full lg:group-hover:bg-green-800 transition-all duration-200 ease-in lg:group-hover:text-white lg:text-green-800 bg-green-800 lg:bg-transparent"
+                  ></i
+                ></span>
+                <p class="w-[80%] text-left pb-2 lg:text-sm text-[17px]">
+                  Project
+                </p>
+              </div>
+              <div class="lg:py-5">
+                <button
+                  class="py-2 px-5 border rounded-3xl border-[#31087B] font-bold text-[15px] hover:bg-[#31087B] hover:scale-105 hover:text-white transition-all duration-200 ease-in-out"
+                >
+                  Beli Sekarang
+                </button>
+              </div>
+            </div>
+          </div>
+          <div id="cardTiket" class="tiket group">
+            <span class="flex cource justify-center">
+              <img
+                class="text-center"
+                height="70"
+                width="70"
+                src="./assets/img/course/angular.png"
+                alt=""
+            /></span>
+            <h4 class="lg:text-lg text-3xl pt-4 font-extrabold">Angular</h4>
+            <hr class="mx-8 mt-2 p-2" />
+            <div class="text-[12px]">
+              <div class="flex flex-wrap lg:px-0 px-6">
+                <span class="w-1/5 text-white"
+                  ><i
+                    class="fa-solid fa-check p-1 rounded-full lg:group-hover:bg-green-800 transition-all duration-200 ease-in lg:group-hover:text-white lg:text-green-800 bg-green-800 lg:bg-transparent"
+                  ></i
+                ></span>
+                <p class="w-[80%] text-left pb-2 lg:text-sm text-[17px]">
+                  3 Bulan akses zecource
+                </p>
+                <span class="w-1/5 text-white"
+                  ><i
+                    class="fa-solid fa-check p-1 rounded-full lg:group-hover:bg-green-800 transition-all duration-200 ease-in lg:group-hover:text-white lg:text-green-800 bg-green-800 lg:bg-transparent"
+                  ></i
+                ></span>
+                <p class="w-[80%] text-left pb-2 lg:text-sm text-[17px]">
+                  Modul pembelajaran selamanya
+                </p>
+                <span class="w-1/5 text-white"
+                  ><i
+                    class="fa-solid fa-check p-1 rounded-full lg:group-hover:bg-green-800 transition-all duration-200 ease-in lg:group-hover:text-white lg:text-green-800 bg-green-800 lg:bg-transparent"
+                  ></i
+                ></span>
+                <p class="w-[80%] text-left pb-2 lg:text-sm text-[17px]">
+                  Project
+                </p>
+              </div>
+              <div class="lg:py-5">
+                <button
+                  class="py-2 px-5 border rounded-3xl border-[#31087B] font-bold text-[15px] hover:bg-[#31087B] hover:scale-105 hover:text-white transition-all duration-200 ease-in-out"
+                >
+                  Beli Sekarang
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="tiket group">
+            <span class="flex cource justify-center">
+              <img
+                class="text-center"
+                height="70"
+                width="70"
+                src="./assets/img/course/laravel.png"
+                alt=""
+            /></span>
+            <h4 class="lg:text-lg text-3xl pt-4 font-extrabold">Laravel</h4>
+            <hr class="mx-8 mt-2 p-2" />
+            <div class="text-[12px]">
+              <div class="flex flex-wrap lg:px-0 px-6">
+                <span class="w-1/5 text-white"
+                  ><i
+                    class="fa-solid fa-check p-1 rounded-full lg:group-hover:bg-green-800 transition-all duration-200 ease-in lg:group-hover:text-white lg:text-green-800 bg-green-800 lg:bg-transparent"
+                  ></i
+                ></span>
+                <p class="w-[80%] text-left pb-2 lg:text-sm text-[17px]">
+                  3 Bulan akses zecource
+                </p>
+                <span class="w-1/5 text-white"
+                  ><i
+                    class="fa-solid fa-check p-1 rounded-full lg:group-hover:bg-green-800 transition-all duration-200 ease-in lg:group-hover:text-white lg:text-green-800 bg-green-800 lg:bg-transparent"
+                  ></i
+                ></span>
+                <p class="w-[80%] text-left pb-2 lg:text-sm text-[17px]">
+                  Modul pembelajaran selamanya
+                </p>
+                <span class="w-1/5 text-white"
+                  ><i
+                    class="fa-solid fa-check p-1 rounded-full lg:group-hover:bg-green-800 transition-all duration-200 ease-in lg:group-hover:text-white lg:text-green-800 bg-green-800 lg:bg-transparent"
+                  ></i
+                ></span>
+                <p class="w-[80%] text-left pb-2 lg:text-sm text-[17px]">
+                  Project
+                </p>
+              </div>
+              <div class="lg:py-5">
+                <button
+                  class="py-2 px-5 border rounded-3xl border-[#31087B] font-bold text-[15px] hover:bg-[#31087B] hover:scale-105 hover:text-white transition-all duration-200 ease-in-out"
+                >
+                  Beli Sekarang
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="tiket group">
+            <span class="flex cource justify-center">
+              <img
+                class="text-center"
+                height="70"
+                width="70"
+                src="./assets/img/course/figma.png"
+                alt=""
+            /></span>
+            <h4 class="lg:text-lg text-3xl pt-4 font-extrabold">Figma</h4>
+            <hr class="mx-8 mt-2 p-2" />
+            <div class="text-[12px]">
+              <div class="flex flex-wrap lg:px-0 px-6">
+                <span class="w-1/5 text-white"
+                  ><i
+                    class="fa-solid fa-check p-1 rounded-full lg:group-hover:bg-green-800 transition-all duration-200 ease-in lg:group-hover:text-white lg:text-green-800 bg-green-800 lg:bg-transparent"
+                  ></i
+                ></span>
+                <p class="w-[80%] text-left pb-2 lg:text-sm text-[17px]">
+                  3 Bulan akses zecource
+                </p>
+                <span class="w-1/5 text-white"
+                  ><i
+                    class="fa-solid fa-check p-1 rounded-full lg:group-hover:bg-green-800 transition-all duration-200 ease-in lg:group-hover:text-white lg:text-green-800 bg-green-800 lg:bg-transparent"
+                  ></i
+                ></span>
+                <p class="w-[80%] text-left pb-2 lg:text-sm text-[17px]">
+                  Modul pembelajaran selamanya
+                </p>
+                <span class="w-1/5 text-white"
+                  ><i
+                    class="fa-solid fa-check p-1 rounded-full lg:group-hover:bg-green-800 transition-all duration-200 ease-in lg:group-hover:text-white lg:text-green-800 bg-green-800 lg:bg-transparent"
+                  ></i
+                ></span>
+                <p class="w-[80%] text-left pb-2 lg:text-sm text-[17px]">
+                  Project
+                </p>
+              </div>
+              <div class="lg:py-5">
+                <button
+                  class="py-2 px-5 border rounded-3xl border-[#31087B] font-bold text-[15px] hover:bg-[#31087B] hover:scale-105 hover:text-white transition-all duration-200 ease-in-out"
+                >
+                  Beli Sekarang
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section5">
+      <div class="content lg:py-10 py-10 lg:h-screen bg-white">
+        <h1 class="font-extrabold text-4xl text-center text-page">
+          Hiring Partner
+        </h1>
+        <div
+          class="grid lg:grid-cols-3 grid-cols-2 gap-3 pt-8 lg:pt-0 h-full w-full lg:place-items-center"
+        >
+          <img
+            class="lg:w-64 w-32"
+            src="./assets/img/sponsor/mandiri.png"
+            alt=""
+          />
+
+          <img class="lg:w-64 w-32" src="./assets/img/sponsor/bca.png" alt="" />
+
+          <img
+            class="lg:w-64 w-32"
+            src="./assets/img/sponsor/dana.png"
+            alt=""
+          />
+
+          <img
+            class="lg:w-64 w-32"
+            src="./assets/img/sponsor/traveloka.png"
+            alt=""
+          />
+
+          <img
+            class="lg:w-64 w-32"
+            src="./assets/img/sponsor/shope.png"
+            alt=""
+          />
+
+          <img
+            class="lg:w-64 w-32"
+            src="./assets/img/sponsor/telkom.png"
+            alt=""
+          />
+
+          <img
+            class="lg:w-64 w-32"
+            src="./assets/img/sponsor/amazon.png"
+            alt=""
+          />
+
+          <img
+            class="lg:w-64 w-32"
+            src="./assets/img/sponsor/mlbb.png"
+            alt=""
+          />
+
+          <img
+            class="lg:w-64 w-32"
+            src="./assets/img/sponsor/realme.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="section5">
+      <div class="content bg-page py-12">
+        <div class="flex flex-col-reverse items-center">
+          <h1
+            class="font-bold w-full text-[30px] lg:text-4xl text-white tracking-wide capitalize text-center"
+          >
+            Alumni
+          </h1>
+          <span class="h-1 w-20 bg-white absolute"></span>
+        </div>
+        <div class="carousel w-full">
+          <div
+            id="slide1"
+            class="carousel-item relative w-full flex justify-center"
+          >
+            <div class="grid lg:grid-cols-3 gap-10 mt-12">
+              <div class="customer">
+                <div class="flex flex-col items-center pb-4">
+                  <img
+                    class="rounded-full w-20 h-20"
+                    src="./assets/img/akashi.jpg"
+                    alt=""
+                  />
+                  <h5 class="font-bold text-lg pt-2">Kuze Ackerley</h5>
+                  <h6 class="text-page font-semibold text-sm">
+                    Lulusan - 2018
+                  </h6>
+                </div>
+                <p class="text-[12px]">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Excepturi quae illum dolor aspernatur qui quidem commodi nobis
+                  magni unde animi. Optio repellendus animi praesentium
+                  asperiores cum, sint sed explicabo tenetur?
+                </p>
+              </div>
+              <div class="customer">
+                <div class="flex flex-col items-center pb-4">
+                  <img
+                    class="rounded-full w-20 h-20"
+                    src="./assets/img/akashi.jpg"
+                    alt=""
+                  />
+                  <h5 class="font-bold text-lg pt-2">Kirigaya Kazuto</h5>
+                  <h6 class="text-page font-semibold text-sm">
+                    Lulusan - 2013
+                  </h6>
+                </div>
+                <p class="text-[12px]">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Excepturi quae illum dolor aspernatur qui quidem commodi nobis
+                  magni unde animi. Optio repellendus animi praesentium
+                  asperiores cum, sint sed explicabo tenetur?
+                </p>
+              </div>
+              <div class="customer">
+                <div class="flex flex-col items-center pb-4">
+                  <img
+                    class="rounded-full w-20 h-20"
+                    src="./assets/img/akashi.jpg"
+                    alt=""
+                  />
+                  <h5 class="font-bold text-lg pt-2">Kuze Ackerley</h5>
+                  <h6 class="text-page font-semibold text-sm">Student</h6>
+                </div>
+                <p class="text-[12px]">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Excepturi quae illum dolor aspernatur qui quidem commodi nobis
+                  magni unde animi. Optio repellendus animi praesentium
+                  asperiores cum, sint sed explicabo tenetur?
+                </p>
+              </div>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide2" class="slideCustomer">❮</a>
+              <a href="#slide2" class="slideCustomer">❯</a>
+            </div>
+          </div>
+          <div
+            id="slide2"
+            class="carousel-item relative w-full flex justify-center"
+          >
+            <div class="grid lg:grid-cols-3 gap-10 mt-12 place-items-center">
+              <div class="customer">
+                <div class="flex flex-col items-center pb-4">
+                  <img
+                    class="rounded-full w-20 h-20"
+                    src="./assets/img/akashi.jpg"
+                    alt=""
+                  />
+                  <h5 class="font-bold text-lg pt-2">Kuze Ackerley</h5>
+                  <h6 class="text-page font-semibold text-sm">Student</h6>
+                </div>
+                <p class="text-[12px]">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Excepturi quae illum dolor aspernatur qui quidem commodi nobis
+                  magni unde animi. Optio repellendus animi praesentium
+                  asperiores cum, sint sed explicabo tenetur?
+                </p>
+              </div>
+              <div class="customer">
+                <div class="flex flex-col items-center pb-4">
+                  <img
+                    class="rounded-full w-20 h-20"
+                    src="./assets/img/akashi.jpg"
+                    alt=""
+                  />
+                  <h5 class="font-bold text-lg pt-2">Kuze Ackerley</h5>
+                  <h6 class="text-page font-semibold text-sm">Student</h6>
+                </div>
+                <p class="text-[12px]">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Excepturi quae illum dolor aspernatur qui quidem commodi nobis
+                  magni unde animi. Optio repellendus animi praesentium
+                  asperiores cum, sint sed explicabo tenetur?
+                </p>
+              </div>
+              <div class="customer">
+                <div class="flex flex-col items-center pb-4">
+                  <img
+                    class="rounded-full w-20 h-20"
+                    src="./assets/img/akashi.jpg"
+                    alt=""
+                  />
+                  <h5 class="font-bold text-lg pt-2">Kuze Ackerley</h5>
+                  <h6 class="text-page font-semibold text-sm">Student</h6>
+                </div>
+                <p class="text-[12px]">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Excepturi quae illum dolor aspernatur qui quidem commodi nobis
+                  magni unde animi. Optio repellendus animi praesentium
+                  asperiores cum, sint sed explicabo tenetur?
+                </p>
+              </div>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide1" class="slideCustomer">❮</a>
+              <a href="#slide1" class="slideCustomer">❯</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="6">
+      <div class="content bg-page3">
+        <footer class="py-100px">
+          <div class="py-5 text-center text-page">
+            <h2 class="font-extrabold text-4xl">zeCourse</h2>
+            <p>&copy; PT 2022 Lorem ipsum dolor sit amet.</p>
+          </div>
+        </footer>
+      </div>
+    </section>
+    <a id="arrowTop" href="#home" class="fixed bottom-5 right-5 z-50">
+      <i
+        class="fa-solid text-black animate-bounce fa-circle-arrow-up fa-2x lg:fa-10x"
+      ></i>
+    </a>
+    <script src="./dist/index.js"></script>
+  </body>
+</html>
